@@ -7,15 +7,14 @@ let tip = document.querySelector('#tip_indivisual');
 
 //calculate button
 calculate.addEventListener('click', () => {
-
     //inavlid input
-    if(amount.value == 0 || people.value == ''){
+    if(amount.value == '' || people.value == ''){
         alert("please enter the required imformation.thank you.");
         return;
     }
 
     if(people.value == ''|| people.value <= 1 ){
-        people.value = 1;
+        people = 1;
         des.innerHTML = '';
     }
     

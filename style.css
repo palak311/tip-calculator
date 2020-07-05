@@ -2,4 +2,15 @@
 #heading {
     text-align: center;
     font-size: xx-large;
+    font-weight: 600;
+    padding: 50px 0;
+    background: #27cdff;
+}
+
+.container{
+    text-align: center;
+}
+#tipamount{
+    display: flex;
+    justify-content: center;
 }
