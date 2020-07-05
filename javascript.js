@@ -7,15 +7,15 @@ let tip = document.querySelector('#tip_indivisual');
 
 //calculate button
 calculate.addEventListener('click', () => {
+
     //inavlid input
-    alert("gsdc");
-    if(amount == '' || people == ''){
+    if(amount.value == 0 || people.value == ''){
         alert("please enter the required imformation.thank you.");
         return;
     }
 
-    if(people == ''|| people <= 1 ){
-        people = 1;
+    if(people.value == ''|| people.value <= 1 ){
+        people.value = 1;
         des.innerHTML = '';
     }
     
