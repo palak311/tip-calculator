@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>calculator</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        </link>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"></link>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>   
+    </head>
+    <body>
+        <p id="heading">Tip Calculator</p>
+        <div id="calculator">
+            <form>
+                <p>How much amount you have to pay?<br>
+                $ <input type="number"placeholder = "amount" id="bill">
+                </p>
+                <p>how was our service?</p>
+                <select id="tip">
+                    <option disabled selected value="0">--choose an option--</option>
+                    <option value="0.2">20% - Outstanding</option>
+                    <option value="0.15">15% - Outstanding</option>
+                    <option value="0.1">10% - Outstanding</option>
+                    <option value="0.05">5% - Outstanding</option>
+                </select>
+            </form>
+        </div>
+        <p>How many people are sharing the bill?</p>
+        <input id="no_of_people" type="number" placeholder="number of people"> people
+        <br>
+        <button id="Calculate_button">Calculate</button>
+        <div id="tipamount">
+            <sup> $ </sup><span id="tip_indivisual">0.00</span>
+            <p id="each">each</p>
+        </div>
+        <script src="javascript.js"></script>
+    </body>
+</html>
